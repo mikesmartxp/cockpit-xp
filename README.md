@@ -19,6 +19,7 @@ Ein Skill für [Claude Code](https://claude.com/claude-code). Claude fragt Schri
 
 Danach baut Claude den kompletten Ordner (Hintergrundbild, `Rennen.xml`, Vorschau), prüft ihn und erklärt den Test in Cockpit.
 Das Design ist frei und richtet sich nach deinen Wünschen.
+Ausführliche Anleitung mit Beispielbild: [`skills/rennbildschirm-designer/README.md`](skills/rennbildschirm-designer/README.md).
 
 **Installation:** Die Datei [`SKILL.md`](skills/rennbildschirm-designer/SKILL.md) speichern als
 
