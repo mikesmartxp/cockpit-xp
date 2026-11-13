@@ -45,5 +45,4 @@ Die Datei einfach neben die eigene HTML-Seite in den Webserver von Cockpit-XP le
 </script>
 ```
 
-Ausführliche Beschreibung: [`api/README.md`](api/README.md). Die Endpunkte der Cockpit-XP-API mit Beispielantworten
-stehen in [`api/api.md`](api/api.md) (ursprüngliche Aufgabenbeschreibung der Bibliothek).
+Ausführliche Beschreibung: [`api/README.md`](api/README.md).
