@@ -4,12 +4,13 @@ Dieses Repository enthält zwei Hilfen für [Cockpit-XP](https://www.cockpit-xp.
 
 | Ordner | Inhalt | Für wen |
 |---|---|---|
-| [`skills/rennbildschirm-designer`](skills/rennbildschirm-designer/SKILL.md) | Claude-Skill, der klassische Rennbildschirme (`Rennen.xml` + Hintergrundbild) im Gespräch entwirft und baut | Anwender ohne Programmierkenntnisse |
+| [`skills/rennbildschirm-designer`](skills/rennbildschirm-designer/SKILL.md) | KI-Skill (Claude Code, Codex, VS Code mit KI), der klassische Rennbildschirme (`Rennen.xml` + Hintergrundbild) im Gespräch entwirft und baut | Anwender ohne Programmierkenntnisse |
 | [`api`](api/README.md) | `cockpit-api.js`: kleine JavaScript-Bibliothek für eigene Rennbildschirme als Webseite über den Webserver von Cockpit-XP | Anwender, die HTML/JavaScript schreiben |
 
 ## 1. Skill „Rennbildschirm-Designer“
 
-Ein Skill für [Claude Code](https://claude.com/claude-code). Claude fragt Schritt für Schritt:
+Eine Anleitung für einen KI-Assistenten, der auf deinem PC arbeiten darf, z. B. [Claude Code](https://claude.com/claude-code),
+Codex von OpenAI oder Visual Studio Code mit KI-Erweiterung (z. B. GitHub Copilot im Agent-Modus). Die KI fragt Schritt für Schritt:
 
 1. Digitale oder analoge Bahn?
 2. Wie viele Fahrer (1–8)?
@@ -17,17 +18,21 @@ Ein Skill für [Claude Code](https://claude.com/claude-code). Claude fragt Schri
 4. Wie soll es aussehen (Farben, Logo, Stil)? Und: Standard-Startampel von Cockpit oder eine eigene?
 5. In welchen Ordner soll der Bildschirm?
 
-Danach baut Claude den kompletten Ordner (Hintergrundbild, `Rennen.xml`, Vorschau), prüft ihn und erklärt den Test in Cockpit.
+Danach baut die KI den kompletten Ordner (Hintergrundbild, `Rennen.xml`, Vorschau), prüft ihn und erklärt den Test in Cockpit.
 Das Design ist frei und richtet sich nach deinen Wünschen.
 Ausführliche Anleitung mit Beispielbild: [`skills/rennbildschirm-designer/README.md`](skills/rennbildschirm-designer/README.md).
 
-**Installation:** Die Datei [`SKILL.md`](skills/rennbildschirm-designer/SKILL.md) speichern als
+**Nutzen ohne Installation:** Den Inhalt von [`SKILL.md`](skills/rennbildschirm-designer/SKILL.md) einfach in den Chat
+kopieren (oder schreiben: *„Lies die Datei …\SKILL.md und folge der Anleitung“*) und dann *„Bau mir einen Rennbildschirm“*.
+
+**Als Skill installieren (Claude Code):** Die Datei speichern als
 
 ```
 %USERPROFILE%\.claude\skills\rennbildschirm-designer\SKILL.md
 ```
 
-Danach in Claude Code einfach schreiben: *„Bau mir einen Rennbildschirm“* oder `/rennbildschirm-designer`.
+Danach einfach schreiben: *„Bau mir einen Rennbildschirm“* oder `/rennbildschirm-designer`.
+Codex und andere Programme haben eigene Skill-Ordner, siehe deren Anleitung.
 
 ## 2. CockpitApi (`api/`)
 
